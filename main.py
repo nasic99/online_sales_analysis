@@ -1,18 +1,18 @@
+from cart import Cart
 from product import Product
 from product_manager import ProductManager
 
-# Kreiramo instancu ProductManager
 manager = ProductManager()
 
-# Dodajemo proizvode
 product1 = Product("Laptop", 800, 5)
 product2 = Product("Phone", 500, 10)
 
 manager.add_product(product1)
 manager.add_product(product2)
 
-# Prikaz proizvoda
-manager.display_products()
+cart = Cart()
+cart.add_to_cart(product1)
+cart.add_to_cart(product2)
 
-# Prikaz ukupne vrednosti inventara
-print(f"Total inventory value: {manager.total_inventory_value()}")
+cart.display_cart()
+print(f"Total cart value: {cart.total_cart_value()}")
