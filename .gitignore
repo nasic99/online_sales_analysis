@@ -1,0 +1,7 @@
+# Ignoriši config.json koji sadrži poverljive podatke
+config.json
+
+# Ignoriši sve snimke ekrana
+*.png
+*.jpg
+*.jpeg
